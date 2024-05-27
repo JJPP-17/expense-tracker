@@ -55,7 +55,7 @@ export const ExpensesTracker = ({onLogout}) => {
     setSelectedValue(value);
   };
 
-  const LoggedOut = ({}) => {
+  const LoggedOut = () => {
     onLogout('auth') 
   }
 
@@ -165,8 +165,8 @@ export const ExpensesTracker = ({onLogout}) => {
                 {transactions.map((e) => {
                   return (
                     <tr key={e.description}>
-                        <td scope="col" style={{ padding: '10px 20px', fontSize: '10px', textAlign: 'center'}} >{e.date}</td>
-                        <td scope="col" style={{ padding: '10px 20px', fontSize: '10px', textAlign: 'center'}}>{e.description}</td>
+                        <td  style={{ padding: '10px 20px', fontSize: '10px', textAlign: 'center'}} >{e.date}</td>
+                        <td  style={{ padding: '10px 20px', fontSize: '10px', textAlign: 'center'}}>{e.description}</td>
                         <td style={{ padding: '10px 20px', fontSize: '10px', textAlign: 'center'}}>{e.type}</td>
                         <td style={{ padding: '10px 20px', fontSize: '10px', textAlign: 'center'}}>
                             {e.type === "income" ? (
