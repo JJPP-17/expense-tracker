@@ -1,0 +1,196 @@
+* {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 20px;
+  font-style: normal;
+  background-color: #F699CD;
+}
+
+@media (min-width: 280px) { 
+    * {
+        font-size: 1.0em;
+    }
+}
+
+/* Login Page */
+
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+
+}
+
+
+/* Login Button */
+ 
+.btn-login {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(117, 117, 245);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-login:hover{
+    background-color: #4da2fd
+}
+
+.btn-username, .btn-password{
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    width: auto;
+    border: none;
+}
+
+.login{
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.first-form{
+  max-width: 400px;
+  padding: 80px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-form, .btn-username, .btn-password, .login{
+    background-color: #FDAB9F;
+}
+
+/* Expenses Tracker Page */
+.expense-tracker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: 0;
+}
+
+.header-tracker {
+    font-size: 3vw;
+}
+
+
+.logout-icon{
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    padding: 1vw 1.5vw;
+    background-color: aquamarine;
+}
+
+.explain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.balance-amount{
+    margin-left: 10px;
+}
+
+.dateform, .scriptform, .amountform{
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    margin-right: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.dateform{
+    margin-top: 15px;
+    background-color: rgb(106, 208, 252);
+    border-color: rgb(106, 208, 252);
+}
+
+.scriptform{
+    background-color: rgb(199, 250, 199);
+    border-color: rgb(199, 250, 199);
+}
+
+.amountform{
+    background-color: rgb(250, 221, 167);
+    border-color: rgb(250, 221, 167);
+}
+
+.radio-section {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+
+.btn-add{
+    outline: 0;
+    border: 0;
+    background-image: linear-gradient(to right,#e052a0,#f15c41);
+    cursor: pointer;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    height: 45px;
+    line-height: 36px;
+    padding: 0 10px;
+    font-size: 14px; 
+    margin: 20px auto;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-add:hover{
+    background-image: linear-gradient(to right,#3ec7e0,#526bf4);
+
+}
+
+.trans {
+    font-size: 25px;
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 10px;
+  }
+  
+  .table th, .table td {
+    border: 1px solid rgb(8, 227, 247);
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  /* Hide less important columns on small screens */
+  @media screen and (max-width: 600px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }
+  
+  /* Make table horizontally scrollable on small screens */
+  @media screen and (max-width: 600px) {
+    .table-wrapper {
+      overflow-x: auto;
+    }
+  }
+  
